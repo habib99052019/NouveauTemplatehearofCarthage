@@ -18,7 +18,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref" : "https://habib99052019.github.io/NouveauTemplatehearofCarthage/",
             "allowedCommonJsDependencies": [
+             
                 "apexcharts",
                 "ev-emitter/ev-emitter",
                 "leaflet",
@@ -27,7 +29,7 @@
                 "mousetrap",
                 "feather-icons"
             ],
-            "outputPath": "dist/sheltos-front-rest/browser",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -106,6 +108,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
